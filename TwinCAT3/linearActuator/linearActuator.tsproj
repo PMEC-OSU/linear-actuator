@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.47">
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000ffffffffffffffffffffffffffffffffffff272525534a4d525153ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff221d1e5048483735355e5c5cffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7772731919194c4d4b5a55565b5657a5a8adffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff484344242424646d705650512520218f9497ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff4b4647222020272929575152565152686666ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff4c4748191717272727534d4e554f50615e60ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff534d4e29282aa2a6ab534e4d524c4d585656ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff555051242222232226514b4c524c4d595757ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff4944451f1d1d221d1e4c48473732336d6b6bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff5c5758282729cfe2ef4d484744403f5d5b5bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff989597595151383b404b46474c48475f5d5dffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff4e4849524a4b6459553b36374b4546626060ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff544f505c54556d67684a45464c46476a696bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffeceaeafbf9f9cdcbcbffffffffffffffffffffffffffffff</ImageData>
+	</ImageDatas>
+	<Project ProjectGUID="{12B95A2C-C63D-425E-8BCF-C60AF7D967BD}" Target64Bit="true" ShowHideConfigurations="#x106">
+		<Io>
+			<Device Id="2" DevType="111" DevFlags="#x0003" AmsPort="28674" AmsNetId="10.214.154.133.3.1" RemoteName="Device 2 (EtherCAT)" InfoImageId="2">
+				<Name>Device 2 (EtherCAT)</Name>
+				<AddressInfo>
+					<Pnp>
+						<DeviceDesc>Ethernet (Realtek USB GbE Family Controller)</DeviceDesc>
+						<DeviceName>\DEVICE\{55B2A026-89F7-4BBD-A68C-37111380F97A}</DeviceName>
+						<DeviceData>0c3796460987</DeviceData>
+					</Pnp>
+				</AddressInfo>
+				<Image Id="1" AddrType="9" ImageType="3">
+					<Name>Image</Name>
+				</Image>
+				<Box Id="1" BoxType="9099" BoxFlags="#x00000020">
+					<Name>Drive 1 (MR-J4-TM)</Name>
+					<ImageId>1000</ImageId>
+					<EtherCAT SlaveType="2" PdiType="#x3680" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="47" FoeType="1" VendorId="#x00000a1e" ProductCode="#x00000201" RevisionNo="#x00070001" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" EnableWdDivider0400="true" EnableWdTime0420="true" TimeoutMailbox2="6000" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="MR-J4-TM EtherCAT Drive (CoE) ver.B5" Desc="MR-J4-TM" PortABoxInfo="#x00ffffff">
+						<SyncMan>0040140126000100010000002200ce051401004026010000</SyncMan>
+						<SyncMan>0048140122000100020000002200ce051401004822010000</SyncMan>
+						<SyncMan>00101d006400010003000000000000000000001064000000</SyncMan>
+						<SyncMan>002829002000010004000000000000000000002820000000</SyncMan>
+						<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000002800010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<BootStrapData>0040000400480004</BootStrapData>
+						<DcMode>446353796e6300000000000000000000444320666f722073796e6368726f6e697a6174696f6e00000000000000000000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<DcMode>467265652052756e0000000000000000467265652052756e000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<Pdo Name="Transmit PDO mapping" Index="#x1a00" Flags="#x0000" SyncMan="3">
+							<Entry Name="Modes of operation display" Index="#x6061">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Statusword" Index="#x6041">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Status DO 1" Index="#x2d11">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Status DO 2" Index="#x2d12">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Status DO 3" Index="#x2d13">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Position actual value" Index="#x6064">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Velocity actual value" Index="#x606c">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Following error actual value" Index="#x60f4">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Torque actual value" Index="#x6077">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Touch probe status" Index="#x60b9">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Touch probe pos1 pos value" Index="#x60ba">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Touch probe pos1 neg value" Index="#x60bb">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Touch probe pos2 pos value" Index="#x60bc">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Touch probe pos2 neg value" Index="#x60bd">
+								<Type>DINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Transmit PDO mapping" Index="#x1a01" Flags="#x0000">
+							<Entry Name="Modes of operation display" Index="#x6061">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Statusword" Index="#x6041">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Status DO 1" Index="#x2d11">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Status DO 2" Index="#x2d12">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Status DO 3" Index="#x2d13">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Status DO 5" Index="#x2d15">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Status DO 7" Index="#x2d17">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Position actual value" Index="#x6064">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Velocity actual value" Index="#x606c">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Following error actual value" Index="#x60f4">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Torque actual value" Index="#x6077">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Point demand value" Index="#x2d68">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Point actual value" Index="#x2d69">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="M code actual value" Index="#x2d6a">
+								<Type>USINT</Type>
+							</Entry>
+							<Entry Name="Touch probe status" Index="#x60b9">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Touch probe pos1 pos value" Index="#x60ba">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Touch probe pos1 neg value" Index="#x60bb">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Touch probe pos2 pos value" Index="#x60bc">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Touch probe pos2 neg value" Index="#x60bd">
+								<Type>DINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Transmit PDO mapping" Index="#x1a02" Flags="#x0000"/>
+						<Pdo Name="Transmit PDO mapping" Index="#x1a03" Flags="#x0000"/>
+						<Pdo Name="Receive PDO Mapping" Index="#x1600" InOut="1" Flags="#x0000" SyncMan="2">
+							<Entry Name="Modes of operation" Index="#x6060">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Controlword" Index="#x6040">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Control DI 1" Index="#x2d01">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Control DI 2" Index="#x2d02">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Control DI 3" Index="#x2d03">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Target position" Index="#x607a">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Target velocity" Index="#x60ff">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Velocity limit value" Index="#x2d20">
+								<Type>UDINT</Type>
+							</Entry>
+							<Entry Name="Target torque" Index="#x6071">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Positive torque limit value" Index="#x60e0">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Negative torque limit value" Index="#x60e1">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Touch probe function" Index="#x60b8">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Receive PDO mapping" Index="#x1601" InOut="1" Flags="#x0000">
+							<Entry Name="Modes of operation" Index="#x6060">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Controlword" Index="#x6040">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Control DI 1" Index="#x2d01">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Control DI 2" Index="#x2d02">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Control DI 3" Index="#x2d03">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Target position" Index="#x607a">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Target velocity" Index="#x60ff">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Velocity limit value" Index="#x2d20">
+								<Type>UDINT</Type>
+							</Entry>
+							<Entry Name="Target torque" Index="#x6071">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Profile velocity" Index="#x6081">
+								<Type>UDINT</Type>
+							</Entry>
+							<Entry Name="Profile acceleration" Index="#x6083">
+								<Type>UDINT</Type>
+							</Entry>
+							<Entry Name="Profile deceleration" Index="#x6084">
+								<Type>UDINT</Type>
+							</Entry>
+							<Entry Name="Torque slope" Index="#x6087">
+								<Type>UDINT</Type>
+							</Entry>
+							<Entry Name="Positive torque limit value" Index="#x60e0">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Negative torque limit value" Index="#x60e1">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Touch probe function" Index="#x60b8">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Receive PDO mapping" Index="#x1602" InOut="1" Flags="#x0000">
+							<Entry Name="Modes of operation" Index="#x6060">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Controlword" Index="#x6040">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Control DI 1" Index="#x2d01">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Control DI 2" Index="#x2d02">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Control DI 3" Index="#x2d03">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Target point table" Index="#x2d60">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Profile velocity" Index="#x6081">
+								<Type>UDINT</Type>
+							</Entry>
+							<Entry Name="Profile acceleration" Index="#x6083">
+								<Type>UDINT</Type>
+							</Entry>
+							<Entry Name="Profile deceleration" Index="#x6084">
+								<Type>UDINT</Type>
+							</Entry>
+							<Entry Name="Touch probe function" Index="#x60b8">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Receive PDO mapping" Index="#x1603" InOut="1" Flags="#x0000"/>
+						<CoeProfile ProfileNo="402"/>
+					</EtherCAT>
+				</Box>
+				<EtherCAT/>
+			</Device>
+		</Io>
+	</Project>
+</TcSmProject>
